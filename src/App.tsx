@@ -1,15 +1,17 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import configure from './store';
-import Counter from './components/Counter';
 
 import './App.scss';
 
+import configure from './store';
+import AppRoutes from './routes/AppRoutes';
 
 const app = (
   <Provider store={configure()}>
-    <Counter />
+    <AppRoutes />
   </Provider>
 );
 

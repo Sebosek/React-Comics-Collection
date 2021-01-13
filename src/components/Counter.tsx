@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { increment as inc, decrement as dec, CounterActionTypes } from '../actions';
+import { increment as inc, decrement as dec, CounterActionTypes } from '../actions/counter';
 import { RootState } from '../store';
 
 // Component props

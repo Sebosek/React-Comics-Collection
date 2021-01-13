@@ -1,6 +1,6 @@
 import { test, expect } from '@jest/globals';
 import { counterReducer, initCounterState } from './counter';
-import { CounterActionType } from '../actions';
+import { CounterActionType } from '../actions/counter';
 
 test('Should setup default init state', () => {
   const state = counterReducer(undefined, { type: '@@INIT' });

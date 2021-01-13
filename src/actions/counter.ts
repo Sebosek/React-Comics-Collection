@@ -1,3 +1,5 @@
+import { InitAction } from './initAction';
+
 export enum CounterActionType {
   Init = 'init',
   Increment = 'increment',
@@ -23,7 +25,7 @@ export type CounterActionTypes
   = CounterInitAction
   | CounterIncrementAction
   | CounterDecrementAction
-  | { type: '@@INIT' };
+  | InitAction;
 
 // Action creators
 export const init: () => CounterActionTypes = () => ({ type: CounterActionType.Init });

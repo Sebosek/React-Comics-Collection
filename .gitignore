@@ -2,6 +2,11 @@
 node_modules
 /public
 
+# coverage result
+/coverage
+/.coverage
+/.nyc_output
+
 # local env files
 /.env
 

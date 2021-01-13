@@ -1,4 +1,12 @@
 {
   "setupFiles": [],
-  "testMatch": [ "**/*.test.[tj]s?(x)" ]
+  "testMatch": [ "**/*.test.[tj]s?(x)" ],
+  "coverageReporters": ["json", "lcov", "text", "clover", "cobertura"],
+  "coverageDirectory": ".coverage",
+  "collectCoverageFrom": [
+    "**/*.{ts,tsx}",
+    "!**/App.tsx",
+    "!**/*.spec.ts",
+    "!**/etc/**/*.{ts,tsx}"
+  ]
 }

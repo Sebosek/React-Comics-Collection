@@ -1,0 +1,26 @@
+﻿svg.star {
+  margin-right: 8px;
+  width: auto;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+
+  #border {
+    fill: #EEBA00;
+  }
+
+  #fill {
+    fill: #FFC700;
+  }
+  
+  &.empty {
+    #border {
+      fill: var(--comics-color--font-secondary);
+    }
+
+    #fill {
+      fill: var(--comics-color--bg);
+    }
+  }
+}

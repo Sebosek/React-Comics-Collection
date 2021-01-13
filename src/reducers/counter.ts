@@ -4,7 +4,7 @@ import {
   CounterActionTypes,
   CounterDecrementAction,
   CounterIncrementAction,
-} from '../actions';
+} from '../actions/counter';
 
 type CounterReducer = (state: CounterState | undefined, action: CounterActionTypes) => CounterState;
 
